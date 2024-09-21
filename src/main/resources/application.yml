@@ -1,0 +1,23 @@
+server:
+  port: 9012
+spring:
+  application:
+    name: springCloudConfig
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    config:
+      server:
+        bootstrap: true
+        git:
+          uri: https://github.com/shakjaf110/springCloudConfigProperties.git
+          username: shakjaf110
+          password: St@r2326
+          clone-on-start: true
+          default-label: main
+          search-paths:
+            - account-server  # Path for account service configurations
+            - user-server     # Path for user service configurations
+logging:
+  level:
+    root: DEBUG
