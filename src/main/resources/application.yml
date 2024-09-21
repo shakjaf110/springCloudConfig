@@ -15,9 +15,8 @@ spring:
           password: St@r2326
           clone-on-start: true
           default-label: main
-          search-paths:
-            - account-server  # Path for account service configurations
-            - user-server     # Path for user service configurations
+          searchPaths: '{application}'
+
 logging:
   level:
     root: DEBUG
